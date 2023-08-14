@@ -4,6 +4,35 @@
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         ArrayList <Boolean> result = new ArrayList <>(candies.length);
+        int[] upcandies = new int[candies.length];
+        int max=0;
+        for(int i=0; i<upcandies.length; i++){
+            upcandies[i] = candies[i]+extraCandies;
+            if(max<candies[i])
+                max=candies[i];
+        }
+        for(int i=0; i<upcandies.length; i++){
+            if(upcandies[i]>=max)               
+                result.add(true);
+            else
+                result.add(false);
+        }
+        return result;
+    }
+}
+
+
+
+
+
+
+
+
+// BRUTE FORCE APPROACH 
+
+/*class Solution {
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        ArrayList <Boolean> result = new ArrayList <>(candies.length);
         int max=0;
         for(int i=0; i<candies.length; i++){
             int candy = candies[i]+ extraCandies;
@@ -20,4 +49,4 @@ class Solution {
         }
         return result;
     }
-}
+}*/
