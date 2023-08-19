@@ -1,5 +1,5 @@
 // LeetCode Problem 1431
-// Running Sum of 1d Array : https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+// Kids with the Greatest number of Candies : https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
