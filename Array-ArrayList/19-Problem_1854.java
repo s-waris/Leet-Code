@@ -2,7 +2,7 @@
 // Maximum Population Year : https://leetcode.com/problems/maximum-population-year
 
 class Solution {
-    public int maximumPopulation(int[][] logs) {
+    public int maximumPopulation(int[][] logs) { // create record of people born
         int[] calendar=new int[101];
         for(int i=0; i<logs.length; i++){
             int birth = logs[i][0];
