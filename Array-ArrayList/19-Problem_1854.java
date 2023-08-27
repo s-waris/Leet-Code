@@ -13,7 +13,7 @@ class Solution {
         int max=calendar[0]; 
         int year=1950;
         for(int i=1; i<101; i++){
-            calendar[i]+=calendar[i-1];
+            calendar[i]+=calendar[i-1]; // Count the number of people per year and store the maximum in max
             if(max<calendar[i]){
                 max=calendar[i];
                 year=i+1950; 
