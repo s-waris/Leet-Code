@@ -10,7 +10,6 @@ class Solution {
             calendar[birth-1950]++;
             calendar[death-1950]--;
         }
-        
         int max=calendar[0]; 
         int year=1950;
         for(int i=1; i<101; i++){
