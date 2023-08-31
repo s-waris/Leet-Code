@@ -21,7 +21,7 @@ class Solution {
             junior(matrix, rowLow, rowHigh, colLow, --colHigh);
         }    
     }
-
+    
     public void junior(int[][] matrix, int rowLow, int rowHigh, int colLow, int colHigh){
         if(colHigh >= colLow){
             for(int i = colHigh; i >= colLow; i--){
@@ -39,7 +39,7 @@ class Solution {
             freshman(matrix, rowLow, rowHigh, ++colLow, colHigh);
         }
     }
-
+    
     public int[][] generateMatrix(int n) {
         int[][] matrix = new int[n][n];
         freshman(matrix, 0, n-1, 0, n-1);
