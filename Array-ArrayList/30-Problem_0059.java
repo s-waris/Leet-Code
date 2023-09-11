@@ -4,6 +4,7 @@
 class Solution {
     
     int num=1;
+    
     public void freshman(int[][] matrix, int rowLow, int rowHigh, int colLow, int colHigh){
         if(colLow <= colHigh){
             for(int i = colLow; i <= colHigh; i++){
