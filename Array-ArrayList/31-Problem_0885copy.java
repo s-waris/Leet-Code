@@ -6,8 +6,8 @@ class Solution {
   int n=0;
   int key=0;
 
-    public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
-      int[][] ans = new int[rows*cols][2];
+  public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
+    int[][] ans = new int[rows*cols][2];
       right(rows, cols, rStart, cStart, rStart, cStart+1, ans);
       return ans;
     }
