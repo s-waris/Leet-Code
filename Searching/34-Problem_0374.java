@@ -1,5 +1,5 @@
 //Leetcode Problem 00374
-//Sqrt(x) : https://leetcode.com/problems/guess-number-higher-or-lower/
+//Guess the number : https://leetcode.com/problems/guess-number-higher-or-lower/
 
 
 public class Solution extends GuessGame {
