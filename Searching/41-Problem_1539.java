@@ -8,7 +8,7 @@ class Solution {
         int end = arr.length-1;
 
         while(start<=end){
-            int mid = start+(end-start)/2;
+            int mid = mid;
 
             //Number of missing numbers at mid
             int diff = arr[mid]-(mid+1);   
@@ -27,3 +27,4 @@ class Solution {
         return end+k+1;
     }
 }
+
